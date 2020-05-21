@@ -1,0 +1,28 @@
+In bit-wise expression, mask is a common term. You can get a certain bit-pattern using mask. For example, if you want to make first 4 bits of a 32-bit number zero, you can use 0xFFFFFFF0 as mask and perform a bit-wise AND operation. Here you have to find such a bit-mask.
+
+Consider you are given a 32-bit unsigned integer N. You have to find a mask M such that L ≤ M ≤ U and N OR M is maximum. For example, if N is 100 and L = 50, U = 60 then M will be 59 and N OR M will be 127 which is maximum. If several value of M satisfies the same criteria then you have to print the minimum value of M.
+
+Input Format
+
+Each input starts with 3 unsigned integers N, L, U where L ≤ U. Input is terminated by EOF.
+
+Output Format
+
+For each input, print in a line the minimum value of M, which makes N OR M maximum.
+
+Look, a brute force solution may not end within the time limit.
+
+Sample Input 0
+
+100 50 60
+100 50 50
+100 0 100
+1 0 100
+15 1 15
+Sample Output 0
+
+59
+50
+27
+100
+1
