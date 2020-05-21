@@ -1,0 +1,21 @@
+Input Format
+
+Input starts with an integer T (≤ 300), denoting the number of test cases.
+
+Each case starts with two integers: p q (1 ≤ p, q ≤ 17).
+
+Output Format
+
+image
+
+Sample Input 0
+
+3
+2 2
+2 1
+2 3
+Sample Output 0
+
+Case 1: 12
+Case 2: 12 22
+Case 3: impossible
