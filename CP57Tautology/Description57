@@ -1,0 +1,32 @@
+WFF’N PROOF is a logic game played with dice. Each die has six faces representing some subset of the possible symbols K, A, N, C, E, p, q, r, s, t. A Well-formed formula (WFF) is any string of these symbols obeying the following rules:
+
+p, q, r, s, and t are WFFs
+if w is a WFF, Nw is a WFF
+if w and x are WFFs, Kwx, Awx, Cwx, and Ewx are WFFs
+image
+
+The meaning of a WFF is defined as follows:
+
+p, q, r, s, and t are logical variables that may take on the value 0 (false) or 1 (true).
+K, A, N, C, E mean and, or, not, implies, and equals as defined in the truth table below.
+image
+
+You must determine whether or not a WFF is a tautology.
+
+Input Format
+
+Input consists of several test cases. Each test case is a single line containing a WFF with no more than 100 symbols. A line containing ‘0’ follows the last case.
+
+Output Format
+
+For each test case, output a line containing ‘tautology’ or ‘not’ as appropriate.
+
+Sample Input 0
+
+ApNp
+ApNq
+0
+Sample Output 0
+
+tautology
+not
